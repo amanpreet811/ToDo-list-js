@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    
+    <link rel="icon" type="image/x-icon" href="./images/to-do.jpg">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+
+</head>
+<body>
+    <div >
+         <div>
+            <img src="./images/logo1.png" class="logo">
+        </div>
+         <!-- <section class="title">
+            <img src="./images/manage-task.png">
+         </section> -->
+         </div>
+         <section>
+             <form id="to-doForm">
+                 <!-- <label for="task-name">Task</label> -->
+                 <input type="text" id="task-name" class="task-name" placeholder="Enter Task Name" required>
+                 
+                 <!-- <label for="priority" >Select priority</label> -->
+                 <select class="priority" placeholder="select priority" required  >
+                     <option value="">---Select priority--</option>
+                     <option value="high">High</option>
+                     <option value="medium">Medium</option>
+                     <option value="low">Low</option>
+                 </select>
+                 
+                 <!-- <label for="deadline" >Deadline</label> -->
+                 <input type="date" id="deadline" name="deadline"  required>
+                 
+                 <button type="submit " class="btn">Add</button>
+             </form>
+         </section>
+    
+         
+            <div class="list">
+                <div class="list1">
+                    <ul class="aList">
+                        <li>Attend meeting 
+                            <span style="font-size:18px">
+                                <a href="#" id="remove1" onclick="deleteItem(this)">&#9986;</a></span>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                <div class="list2">
+                    <ul class="bList">
+                        <li>Picking up Laundry
+                            <span style="font-size:18px">
+                                <a href="#" id="remove2" onclick="deleteItem(this)">&#9986;</a></span>
+
+                        </li>
+                        
+                    </ul>
+                   
+                    
+                </div>
+                <div class="list3">
+                    <!-- <img src="./images/planner.jpg"> -->
+                    <ul class="cList">
+                        <li>attend zumba class
+                            <span style="font-size:18px">
+                                <a href="#" id="remove3" onclick="deleteItem(this)">&#9986;</a></span>
+
+                        </li>
+                        
+                    </ul>
+                   
+                </div>
+             </div>
+      
+         
+              
+        
+    
+</body>
+</html>   
